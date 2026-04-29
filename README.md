@@ -1,136 +1,46 @@
-📘 Exercícios ReactJS – Nível 2 (Arrays e Variáveis)
+# ReactJS Exercises – Nível 2 (Variáveis + Arrays)
 
-Este projeto contém exercícios práticos em ReactJS com foco em manipulação de arrays, variáveis e renderização dinâmica.
+Este repositório contém uma série de 15 exercícios práticos focados na manipulação de **Arrays** e **Variáveis** utilizando ReactJS. O objetivo é fortalecer os fundamentos de lógica de programação dentro do ecossistema React.
 
-🚀 Como rodar o projeto
-npm install
-npm run dev
+## ⚠️ Dica Técnica Crucial: Vite Config
+O passo da propriedade `base` no arquivo `vite.config.js` é o que mais gera erros em builds. **Sem ele, as imagens e scripts não carregam**, pois os caminhos tornam-se incorretos. Certifique-se de configurar a base adequadamente para o seu ambiente de deploy.
 
-Estrutura igual ao nível 1 — basta substituir os arquivos dentro de src/.
+## 🚀 Conceitos Praticados
+Neste nível, exploramos como o React lida com estruturas de dados JavaScript:
 
-⚠️ Configuração importante (Vite)
+* **Acesso por índice:** Uso de `array[0]`, `array[1]` e `array[array.length - 1]` para buscar dados.
+* **Propriedade `.length`:** Utilizada para contar itens (Exercícios 12 e 13).
+* **Método `.map()`:** Primeiro contato com a renderização dinâmica usando o `index` para gerar listas numeradas (Exercício 15).
+* **Identidade Visual:** O badge do header foi alterado para **roxo** para diferenciar visualmente do Nível 1.
 
-O ponto mais crítico do projeto está no arquivo:
+## 📝 Lista de Exercícios Concluídos
 
-vite.config.js
+1.  **Array de Frutas:** Criar array e mostrar a primeira fruta.
+2.  **Duas Frutas:** Mostrar "Eu gosto de Banana e Uva" usando índices.
+3.  **Array de Números:** Mostrar o primeiro e segundo número da lista.
+4.  **Soma de Array:** Calcular e mostrar a soma (ex: 5 + 10 + 15 = 30).
+5.  **Lista de Alunos:** Exibir nomes formatados como Aluno 1, 2 e 3.
+6.  **Cidade Favorita:** Selecionar um item específico de uma lista de cidades.
+7.  **Array de Preços:** Exibir valores formatados com "R$".
+8.  **Lista de Cores:** Mostrar múltiplas cores em uma única frase.
+9.  **Soma de Idades:** Somar especificamente as duas primeiras idades do array.
+10. **Jogos:** Mostrar jogo favorito a partir de uma lista.
+11. **Comidas:** Expressar uma escolha de refeição baseada no array.
+12. **Tamanho do Array:** Usar `.length` para mostrar a quantidade de filmes.
+13. **Primeiro e Último:** Mostrar dinamicamente o início e o fim da lista de linguagens.
+14. **Soma de Três:** Realizar a soma de três valores numéricos.
+15. **Mini Lista de Tarefas:** Renderização de uma lista completa e numerada.
 
-Sem configurar o base, o projeto pode apresentar problemas como:
+## 🛠️ Como Executar o Projeto
 
-Imagens não carregando
-Scripts quebrando
-Caminhos incorretos
-Exemplo:
-import { defineConfig } from 'vite'
+Para rodar qualquer um dos exercícios acima:
 
-export default defineConfig({
-  base: '/nome-do-repositorio/',
-})
-🧠 Conceitos trabalhados
-Acesso a arrays por índice (array[0])
-Uso de .length
-Soma de valores
-Interpolação de strings
-Renderização dinâmica com .map()
-Uso de index para listas numeradas
-📚 Exercícios
-1. Array de frutas
-const frutas = ["Maçã", "Banana", "Uva"]
+1.  Certifique-se de que a estrutura base do Vite está pronta.
+2.  Substitua os arquivos necessários na pasta `src/`.
+3.  No terminal, execute:
+    ```bash
+    npm run dev
+    ```
 
-Saída:
-
-Primeira fruta: Maçã
-2. Mostrar duas frutas
-
-Saída:
-
-Eu gosto de Banana e Uva
-3. Array de números
-const numeros = [10, 20, 30]
-
-Saída:
-
-Primeiro número: 10
-Segundo número: 20
-4. Soma de números
-const numeros = [5, 10, 15]
-
-Saída:
-
-Resultado da soma: 30
-5. Array de nomes
-const nomes = ["Ana", "Carlos", "João"]
-
-Saída:
-
-Aluno 1: Ana
-Aluno 2: Carlos
-Aluno 3: João
-6. Cidade favorita
-const cidades = ["São Paulo", "Rio", "Curitiba"]
-
-Saída:
-
-Minha cidade favorita é Rio
-7. Array de preços
-const precos = [10, 25, 40]
-
-Saída:
-
-Preço do produto 1: R$10
-Preço do produto 2: R$25
-8. Lista de cores
-const cores = ["Azul", "Vermelho", "Verde"]
-
-Saída:
-
-Minhas cores favoritas são: Azul, Vermelho e Verde
-9. Array de idades
-const idades = [18, 21, 30]
-
-Saída:
-
-A soma das duas primeiras idades é: 39
-10. Array de jogos
-const jogos = ["Minecraft", "FIFA", "GTA"]
-
-Saída:
-
-Meu jogo favorito é GTA
-11. Array de comidas
-const comidas = ["Pizza", "Hambúrguer", "Sushi"]
-
-Saída:
-
-Hoje eu quero comer Pizza
-12. Tamanho do array
-const filmes = ["Matrix", "Batman", "Avatar", "Interestelar"]
-
-Saída:
-
-Quantidade de filmes: 4
-13. Primeiro e último item
-const linguagens = ["JavaScript", "Python", "Java", "C#"]
-
-Saída:
-
-Primeira linguagem: JavaScript
-Última linguagem: C#
-14. Soma de valores
-const valores = [2, 4, 6]
-
-Saída:
-
-Resultado: 12
-15. Lista de tarefas
-const tarefas = ["Estudar React", "Fazer exercícios", "Praticar código"]
-
-Saída:
-
-Minhas tarefas hoje:
-1 - Estudar React
-2 - Fazer exercícios
-3 - Praticar código
-📌 Observações finais
-Este nível marca o início da renderização dinâmica com .map()
-O uso de arrays é fundamental para aplicações React reais
-Ideal para reforçar lógica antes de avançar para componentes mais complexos
+---
+*Desenvolvido como parte do cronograma de estudos de ReactJS.*
