@@ -1,6 +1,3 @@
-# Criando uma versão aprimorada e mais completa do README para o GitHub do Bruno.
-# Incorporando as tecnologias que ele usa (PHP, JS, HTML, CSS) e o contexto de seus estudos.
-
 github_readme = """# ⚛️ ReactJS Exercises – Nível 2 (Variáveis + Arrays)
 
 Repositório dedicado ao segundo nível de aprendizado em ReactJS, focado intensamente na manipulação de **Arrays** e **Variáveis** dentro de componentes.
