@@ -1,4 +1,4 @@
-github_readme = """# ⚛️ ReactJS Exercises – Nível 2 (Variáveis + Arrays)
+# ⚛️ ReactJS Exercises – Nível 2 (Variáveis + Arrays)
 
 Repositório dedicado ao segundo nível de aprendizado em ReactJS, focado intensamente na manipulação de **Arrays** e **Variáveis** dentro de componentes.
 
