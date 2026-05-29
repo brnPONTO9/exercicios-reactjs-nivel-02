@@ -29,14 +29,3 @@ O projeto engloba 15 exercícios práticos que cobrem desde a criação de array
 
 ## 🎨 Diferencial Visual
 Para facilitar a organização dos módulos de estudo, este nível utiliza um **Badge Roxo** no header, diferenciando-o visualmente do Nível 1.
-
-## ⚙️ Como rodar o projeto localmente
-```bash
-# 1. Clone o repositório
-git clone [https://github.com/seu-usuario/nome-do-repo.git](https://github.com/seu-usuario/nome-do-repo.git)
-
-# 2. Instale as dependências
-npm install
-
-# 3. Inicie o servidor de desenvolvimento
-npm run dev
